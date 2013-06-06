@@ -1,6 +1,6 @@
 # HTML Compress #
 
-A filter to provide simple HTML minification for 
+A filter to provide simple HTML minification for
 [Nanoc](http://nanoc.ws).
 
 ## Installation ##
@@ -8,7 +8,7 @@ A filter to provide simple HTML minification for
 Drop the file `html_compress.rb` into the `lib/filters` folder of
 your Nanoc project.
 
-Make sure you have 
+Make sure you have
 [Nokogiri](http://nokogiri.org)
 in your `Gemfile`:
 
@@ -35,14 +35,14 @@ Use the filter in `compile` rules as necessary. Examples:
         end
     end
 
-You can optional output the errors found in your HTML by Nokogiri:
+You can optionally output the errors found in your HTML by Nokogiri:
 
     filter :html_compress, :show_errors => true
 
 This filter should only be used on HTML, so apply it after erb, markdown
 and other filters which you may use.
 
-## Details ##    
+## Details ##
 
 The filter uses Nokogiri to parse the HTML and reduce the filesize in the
 following basic ways:

@@ -1,7 +1,8 @@
 # encoding: utf-8
-require 'nokogiri'
 
 class HTMLCompressFilter < Nanoc::Filter
+    requires 'nokogiri'
+
     identifier :html_compress
     type :text
 

@@ -1,4 +1,4 @@
-# HTML Compress #
+# HTML Compress Filter #
 
 A filter to provide simple HTML minification for
 [Nanoc](http://nanoc.ws).
